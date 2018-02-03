@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head>
+			<base href="/" target="_blank">
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Framevuerk Documents</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="google-analytics.js"></script>
+  <link href="framevuerk-docs-default.min.css" rel="stylesheet"></head>
+  <body style="font-family: 'Lato', sans-serif; font-size: 14px;">
+    <div class="fv-main" id="app" style="padding-left: 0px;"><header class="fv-header" style="height: 65px; max-height: 65px; min-height: 65px;"><button class="fv-button"><i class="fa fa-bars"></i> </button><div class="space"></div><div class="title"><h2 class="fv-no-wrap">Usage</h2></div><div class="space"></div><!----></header><div class="fv-content fv-row"><div class="fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2"><span><p><h2>Globals:</h2>Just follow the example and use it!</p><br></span><span><h3>HTML:</h3><div class="doc-code"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/vue@2.4.4/dist/vue.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/framevuerk@latest/dist/framevuerk-en.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/framevuerk@latest/dist/framevuerk-en.min.css"</span>/&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+			Vue.use(framevuerk);
+			<span class="hljs-keyword">new</span> Vue({
+				el: <span class="hljs-string">"#app"</span>
+			});
+		</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">fv-main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+			<span class="hljs-comment">&lt;!-- Your Content --&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">fv-main</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre></div><br></span><span><p><h2>CommonJS:</h2></p><br></span><span><h3>JS:</h3><div class="doc-code"><pre><code class="javascript hljs"><span class="hljs-keyword">var</span> Vue = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vue'</span>);
+<span class="hljs-keyword">var</span> framevuerk = <span class="hljs-built_in">require</span>(<span class="hljs-string">'framevuerk/dist/framevuerk-en.js'</span>);
+
+Vue.use(framevuerk);
+<span class="hljs-keyword">new</span> Vue({
+	<span class="hljs-attr">el</span>: <span class="hljs-string">"#app"</span>
+});</code></pre></div><br></span><span><h3>Template:</h3><div class="doc-code"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/your/app.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/framevuerk@latest/dist/framevuerk-en.css"</span>/&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">fv-main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+			<span class="hljs-comment">&lt;!-- Your Content --&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">fv-main</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre></div><br></span><span><p><h2>ES6 (with webpack):</h2></p><br></span><span><h3>JS:</h3><div class="doc-code"><pre><code class="javascript hljs"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> framevuerk <span class="hljs-keyword">from</span> <span class="hljs-string">'framevuerk/dist/framevuerk-en.js'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'framevuerk/dist/framevuerk-en.css'</span>
+
+Vue.use(framevuerk);
+<span class="hljs-keyword">new</span> Vue({
+	<span class="hljs-attr">el</span>: <span class="hljs-string">"#app"</span>
+});</code></pre></div><br></span><span><h3>Template via pug (after including app.js):</h3><div class="doc-code"><pre><code class="pug hljs 1c">fv-main<span class="hljs-meta">#app</span>
+	 <span class="hljs-comment">// Your Content</span></code></pre></div><br></span><span><p><a href="https://jsfiddle.net/nainemom/vhLkyg5u/" target="_blank" class="fv-link">Simple Example</a></p><br></span>You are now config your app to use <b>Framevuerk</b>! Let's go to use our components.</div></div><span class="sidebar"><!----><!----></span></div>
+  <script type="text/javascript" src="framevuerk-docs-default.min.js"></script>
+
+
+</body></html>
