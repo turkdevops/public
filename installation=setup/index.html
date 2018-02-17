@@ -8,7 +8,7 @@
   <link href="framevuerk-docs.min.css" rel="stylesheet"></head>
   <body style="font-family: 'Lato', sans-serif; font-size: 14px;">
     <div class="fv-main" id="app" style="padding-left: 0px;"><header class="fv-header" style="height: 65px; max-height: 65px; min-height: 65px;"><button class="fv-button"><i class="fa fa-bars"></i> </button><div class="space"></div><div class="title"><h2 class="fv-no-wrap">Setup</h2></div><div class="space"></div><!----></header><div class="fv-content"><div class="fv-content fv-row"><div class="fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2"><span><p>First at all, you should install <b>Framevuerk</b> and of course <b>Vue</b> from terminal.</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="terminal hljs sql">npm <span class="hljs-keyword">install</span> vue <span class="hljs-comment">--save</span>
-npm <span class="hljs-keyword">install</span> framevuerk <span class="hljs-comment">--save</span></code></pre></div><br></span><span><p>You can also install these, just if you want active touch actions support, fvDatepicker component and icons.</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="terminal hljs sql">npm <span class="hljs-keyword">install</span> persian-<span class="hljs-built_in">date</span> <span class="hljs-comment">--save</span>
+npm <span class="hljs-keyword">install</span> framevuerk <span class="hljs-comment">--save</span></code></pre></div><br></span><span><p>You can also install these, just if you want active touch actions support, fvDatepicker component and icons.</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="terminal hljs sql">npm <span class="hljs-keyword">install</span> idate <span class="hljs-comment">--save</span>
 npm <span class="hljs-keyword">install</span> hammerjs <span class="hljs-comment">--save</span>
 npm <span class="hljs-keyword">install</span> font-awesome <span class="hljs-comment">--save</span></code></pre></div><br></span><span><p>And just follow the example and use it! (`commonjs` syntax and `require` also available)</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="javascript hljs"><span class="hljs-comment">// Vue package</span>
 <span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
@@ -19,9 +19,9 @@ npm <span class="hljs-keyword">install</span> font-awesome <span class="hljs-com
 <span class="hljs-comment">// If you handle styles with webpack, import this. Else you can include this via &lt;link rel="stylesheet"&gt;</span>
 <span class="hljs-keyword">import</span> <span class="hljs-string">'framevuerk/dist/framevuerk.css'</span>
 
-<span class="hljs-comment">// PersianDate package, just if you want active more features for fvDatepicker</span>
-<span class="hljs-keyword">import</span> PersianDate <span class="hljs-keyword">from</span> <span class="hljs-string">'persian-date'</span>
-Framevuerk.use(<span class="hljs-string">'persian-date'</span>, PersianDate)
+<span class="hljs-comment">// IDate package, just if you want support jalaali dates for fvDatepicker</span>
+<span class="hljs-keyword">import</span> IDate <span class="hljs-keyword">from</span> <span class="hljs-string">'idate'</span>
+Framevuerk.use(<span class="hljs-string">'date'</span>, IDate)
 
 <span class="hljs-comment">// Hammer package, just if you want active touch actions support</span>
 <span class="hljs-keyword">import</span> Hammer <span class="hljs-keyword">from</span> <span class="hljs-string">'hammerjs'</span>
