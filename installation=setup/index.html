@@ -8,7 +8,7 @@
   <link href="framevuerk-docs.min.css" rel="stylesheet"></head>
   <body style="font-family: 'Lato', sans-serif; font-size: 14px;">
     <div class="fv-main" id="app" style="padding-left: 0px;"><header class="fv-header" style="height: 65px; max-height: 65px; min-height: 65px;"><button class="fv-button"><i class="fa fa-bars"></i> </button><div class="space"></div><div class="title"><h2 class="fv-no-wrap">Setup</h2></div><div class="space"></div><!----></header><div class="fv-content"><div class="fv-content fv-row"><div class="fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2"><span><p>First at all, you should install <b>Framevuerk</b> and of course <b>Vue</b> from terminal.</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="terminal hljs sql">npm <span class="hljs-keyword">install</span> vue <span class="hljs-comment">--save</span>
-npm <span class="hljs-keyword">install</span> framevuerk <span class="hljs-comment">--save</span></code></pre></div><br></span><span><p>You can also install these, just if you want active touch actions support, fvDatepicker component and icons.</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="terminal hljs sql">npm <span class="hljs-keyword">install</span> idate <span class="hljs-comment">--save</span>
+npm <span class="hljs-keyword">install</span> framevuerk <span class="hljs-comment">--save</span></code></pre></div><br></span><span><p>You can also install these, just if you want active touch actions support, `fvDatepicker` jalaali dates supoort and icons.</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="terminal hljs sql">npm <span class="hljs-keyword">install</span> idate <span class="hljs-comment">--save</span>
 npm <span class="hljs-keyword">install</span> hammerjs <span class="hljs-comment">--save</span>
 npm <span class="hljs-keyword">install</span> font-awesome <span class="hljs-comment">--save</span></code></pre></div><br></span><span><p>And just follow the example and use it! (`commonjs` syntax and `require` also available)</p><br></span><span><h3> </h3><div class="doc-code"><pre><code class="javascript hljs"><span class="hljs-comment">// Vue package</span>
 <span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
@@ -29,7 +29,7 @@ Framevuerk.use(<span class="hljs-string">'hammer'</span>, Hammer)
 
 <span class="hljs-comment">// Font-Awesome icons, just if you want active icons</span>
 <span class="hljs-comment">// If you handle styles with webpack, import this. Else you can include this via &lt;link rel="stylesheet"&gt;</span>
-<span class="hljs-keyword">import</span> <span class="hljs-string">'font-awesome/css/font-awesome.css'</span> <span class="hljs-comment">//if you handled with webpack, else you can include this via &lt;link rel="stylesheet"&gt;</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'font-awesome/css/font-awesome.css'</span>
 
 <span class="hljs-comment">// Active Framevuerk...</span>
 Vue.use(Framevuerk)
